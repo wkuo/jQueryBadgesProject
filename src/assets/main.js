@@ -8,6 +8,7 @@ $(function() {
         $("#badges").append("<div></div>");
         $("#badges div").addClass("course");
         $(".course").append("<h3>"+ response.courses.completed[i].title +"</h3>");
+        $(".course").append("<img src='"+ response.courses.completed[i].badge +"'></img>");
       }
     }
   });
